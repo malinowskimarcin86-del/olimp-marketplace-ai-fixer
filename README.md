@@ -1,12 +1,21 @@
+## PL summary
+
+Projekt realizuje deterministyczne czyszczenie eksportu partnera marketplace:
+- normalizuje wymiary, kolory, cenę, stany i EAN,
+- czyści opisy HTML/JSON,
+- generuje tytuły Allegro,
+- prezentuje wynik w dashboardzie,
+- umożliwia eksport CSV/XLSX.
+
 # Marketplace operations — partner export normalizer
 
 ## Goal
 
-Internal **B2B tool** to load a partner’s dirty product export (`data/partner_export_dirty.json`), **normalize** fields deterministically, **review** data quality in a dashboard, and **export** cleaned rows to CSV/XLSX before channel listing (e.g. Allegro).
+Internal **B2B tool** to load a partner’s dirty product export (`data/partner_export_dirty.json`), **normalize** fields deterministically, **review** data quality in a dashboard, and **export** cleaned rows to CSV/XLSX before channel listing (e.g. Allegro). The project was prepared as a **recruitment task** solution for **Olimp Marketplace**.
 
 ## Why deterministic parsing for core cleaning
 
-Partner data must be **auditable and reproducible**: same input always yields the same output, with explicit **issue codes** instead of silent fixes. Core cleaning uses **rules and parsers** (regex, JSON/HTML handling, ordered key reads)—not LLM inference—so ops can trust diffs, exports, and escalation paths.
+Partner data must be **auditable and reproducible**: same input always yields the same output, with explicit **issue codes** instead of silent fixes. Core cleaning uses **rules and parsers** (regex, JSON/HTML handling, ordered key reads)—not LLM inference—so reviewers can trust diffs, exports, and issue trails.
 
 ## Normalization (summary)
 
@@ -49,8 +58,11 @@ npm install
 npm run dev
 ```
 
-- App: [http://localhost:3000](http://localhost:3000)  
-- Dashboard: [http://localhost:3000/dashboard](http://localhost:3000/dashboard)
+After `npm run dev`, open:
+
+- **App:** `/`
+- **Dashboard:** `/dashboard`
+- **Validation view:** `/debug/transform`
 
 Place (or replace) partner data at **`data/partner_export_dirty.json`** (JSON **array** of objects).
 
