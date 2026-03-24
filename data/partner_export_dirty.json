@@ -1,0 +1,34 @@
+[
+  {
+    "NAZWA ORG": "Dyw. Łazienkowy Belweder 040*060cm czarny",
+    "SKU": "BEL-4060-BLK",
+    "Cena": "59.90 PLN",
+    "Opis ofe": "<div><p>Luksusowy dywanik Belweder. <b>Kolor: czarny</b>. Rozmiar: 40x60. Materiał to 100% poliester.</p></div>",
+    "Stany": 15,
+    "EAN": "5901234567810"
+  },
+  {
+    "NAZWA ORG": "Dyw. Łazienkowy Belweder 040*060cm j. szary",
+    "SKU": "BEL-4060-GRY-L",
+    "Cena": "59,90",
+    "Opis ofe": "{\"sections\":[{\"items\":[{\"type\":\"TEXT\",\"content\":\"Dywanik łazienkowy z serii Belweder w kolorze jasnoszarym. Wymiary 400x600 mm. Bardzo chłonny.\"}]}]}",
+    "Stany": "dużo",
+    "EAN": "5901234567827"
+  },
+  {
+    "NAZWA ORG": "Dyw. Łazienkowy Belweder 050*080cm beż",
+    "SKU": "BEL-5080-BEG",
+    "Cena": "75.00",
+    "Opis ofe": "Dywanik Belweder beżowy. 50x80cm. Skład: 100% PES. Antypoślizgowy.",
+    "Stany": 0,
+    "EAN": ""
+  },
+  {
+    "NAZWA ORG": "Dyw. Łazienkowy Belweder 050*080cm c. szary",
+    "SKU": "BEL-5080-GRY-D",
+    "Cena": "75.00 PLN",
+    "Opis ofe": "{\"sections\":[{\"items\":[{\"type\":\"TEXT\",\"content\":\"Produkt: Dywanik Belweder 50x80. Kolor: c_szary (ciemny szary). Gramatura 800g.\"}]}]}",
+    "Stany": 3,
+    "EAN": "BŁĄD_ODCZYTU"
+  }
+]
